@@ -1,4 +1,4 @@
-package uk.co.benskin.graphql_spring_boot_tutorial.entities;
+package com.kiran.graphql.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,8 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.kiran.graphql.enums.Animal;
+
 import lombok.Data;
-import uk.co.benskin.graphql_spring_boot_tutorial.enums.Animal;
 
 @Data
 @Entity
@@ -25,4 +26,7 @@ public class Pet {
     private Animal type;
 
     private int age;
+    
+    private long ownerid;
+    
 }
